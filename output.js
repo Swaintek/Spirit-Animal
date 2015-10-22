@@ -1,3 +1,13 @@
+var animalObjects = JSON.parse(localStorage.getItem('animals'));
+
+var winningAnimal = 0;
+
+for (var i = 0; i < (animalObjects.length); i++) {
+		if(animalObjects[i].score > winningAnimal) {
+		winningAnimal = animalObjects[i];
+	} 
+};
+
 var winningAnimal;
 
 var declareWinner = function () {
@@ -34,7 +44,7 @@ var output = function() {
 	article.innerHTML = msgTwo;
   var audio = document.getElementById('audio');
   var source = document.getElementById('mp3Source');
-  source.src=song
+  source.src=song;
 
   audio.load();
   audio.play();
