@@ -1,8 +1,49 @@
-#footer {
-	clear: both;
-	position: relative;
-	z-index: 10;
-	height: 3em;
-	margin: -3em;
-	text-align: center;
+* {
+	background-color: #c6cdd1;
+	font-family: Merriweather;
+}
+
+header {
+   justify-content: center;	
+   height: 150px;
+   margin-top: 3%;
+   margin-left: 8%;
+   margin-bottom: 3%;
+   margin-right: 8%;
+   background-color:  #c1a8ad ;
+   box-shadow: 0px 0px 15px rgba(49,7,7,1);
+   border-radius: 5px;
+   text-overflow: ellipsis;
+	white-space: nowrap;
+ 	overflow: hidden;
+}
+
+#headerImage img {
+	border-radius: 5px;
+}
+
+#bioImage {
+	border-radius: : 5px;
+}
+.header-h1{
+ padding-top: 15px;
+ background-color: #c1a8ad;
+ font-weight: bold:;
+ text-align: center;
+}
+#index-nav{
+ background-color: #c1a8ad ;
+ text-align: center;
+}
+#header-link{
+ background-color: #c1a8ad ;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+.gh {
+	color: #83515a;
+	font-weight: bold;
+}
+#teamName  {
+	font-weight: bold;
 }

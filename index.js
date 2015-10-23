@@ -5,9 +5,10 @@ var initialClick = function(e) {
 	e.preventDefault();
 	var userInput = function() {
 		username = document.getElementById('username').value;
-//Adding Local Storage of Username.
-localStorage.setItem('username', username);
-		}
+		//Adding Local Storage of Username.
+		localStorage.setItem('username', username);
+		document.getElementById('username').style.visibility = 'hidden';
+	}
 //Function Change the Name Label to a "String" Message preparing the user for the test. 
 	var loadQuestions = function() {
 	  var label = document.getElementById('labelTag');

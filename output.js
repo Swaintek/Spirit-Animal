@@ -26,9 +26,9 @@ var song = winningAnimal.animalSong
 var output = function() {
 	var hOne = document.getElementById('textMsg');
 	var article = document.getElementById('animal-content');
-	var msgOne = "Congratulations, " + localStorage.getItem('username') + '<br />' + '<img src= ' + 
-						winningAnimal.animalImage + ' />' + '<br />' + "We've Found Your Spirit Animal " 
-						+ " The " + '<q>' + winningAnimal.animalName.toUpperCase() + '</q>';
+	var msgOne = "Congratulations, " + localStorage.getItem('username') + '<br />' + "We've Found Your Spirit Animal "
+                        + " the " + winningAnimal.animalName + '<br />' + '<img id="animalpic"src= ' +
+                        winningAnimal.animalImage.toUpperCase() + ' />' + '<br />' ;
 	hOne.innerHTML = msgOne;
 	var msgTwo = winningAnimal.animalInfo;
 	article.innerHTML = msgTwo;
