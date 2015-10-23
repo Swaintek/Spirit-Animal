@@ -3,47 +3,91 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link src= "about.css" type="text.css" rel="stylesheet" />
+  <link href="about.css" rel="stylesheet" />
+  <link href="skeleton.css" rel="stylesheet" />
+  <link href="normalize.css" rel="stylehseet" />
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   <title>Spirit Animal</title>
 </head>
 
 <body>
 
-  <header>
-  <h1>Team Bios</h1>
-  </header>
+ <div>
+  <div class="row"> 
+    <div class="eleven columns"> 
+    <header>
+       <h1 class="header-h1">Spirit Animal Test</h1>
+         <nav id="index-nav">
+           <a id='header-link' href="">Play the Game!</a>
+           <a id='header-link' href="">About Team Expansive</a>
+         </nav>
+     </header>
+     </div>
+    </div>
+  </div>
+    
+ <div class="container">
+    <div class="row">
+      <div class="four columns">
+          <article class="logo"> 
+          <img name="Gold Leaf" src="img/logo.png" width=270/>
+          </article>
+      </div>
+      <div class="eight columns">
+        <a href="about.html" onMouseOver="SwapOutTeam()" onMouseOut="SwapBackTeam()">
+        <img name="imageflip9" src="img/tech-titans.jpeg" width=400 height=200 border=1px/></a>
+      </div>
+    </div>
+    <article class="teamname">  
+    <h3>Team Bios</h3>
+    </article> 
+
+    <section class="bio1">
+    <div class="row">
+      <div class="one-half column">
+        <a href="about.html" onMouseOver="SwapOutDave()" onMouseOut="SwapBackDave()">
+        <img name="imageflip1" src="img/swaintek.jpg" width=175 height=200 border=5px/></a>
+        <h5>Dave Swaintek</h5>
+        <p class="one">Austin semiotics butcher, authentic biodiesel scenester artisan mixtape roof party migas mustache fashion axe. Lomo actually pork belly mumblecore heirloom try-hard tilde, kale chips cornhole health goth. Hashtag       umbersexual umami, tilde High Life cronut skateboard Etsy Marfa American Apparel four dollar toast.<br />
+        <a href="https://github.com/swaintek" class="gh">Check me out!</a>
+        </p>
+      </div>
+      <div class="one-half column">
+        <a href="about.html" onMouseOver="SwapOutNoah()" onMouseOut="SwapBackNoah()">
+        <img name="imageflip2" src="img/gribbins.jpg" width=175 height=200 border=5px/></a>
+        <h5>Noah Gribbin</h5>
+        <p class="two">Austin semiotics butcher, authentic biodiesel scenester artisan mixtape roof party migas mustache fashion axe. Lomo actually pork belly mumblecore heirloom try-hard tilde, kale chips cornhole health goth. Hashtag lumbersexual umami, tilde High Life cronut skateboard Etsy Marfa American Apparel four dollar toast.<br />
+        <a href="https://github.com/noahgribbins" class="gh">Check me out!</a>
+        </p>
+        </div>
+      </div>  
+      </section>
   
-  <h3>Dave Swaintek</h3>
-  <a href="about.html" onMouseOver="SwapOutDave()" onMouseOut="SwapBackDave()">
-  <img name="imageflip1" src="img/swaintek.jpg" width=200 height=222 border=0/></a>
-  <p>Austin semiotics butcher, authentic biodiesel scenester artisan mixtape roof party migas mustache fashion axe. Lomo actually pork belly mumblecore heirloom try-hard tilde, kale chips cornhole health goth. Hashtag lumbersexual umami, tilde High Life cronut skateboard Etsy Marfa American Apparel four dollar toast.
-  </p>
+    <section class="bio2">
+    <div class="row">
+      <div class="one-half column">
+        <a href="about.html" onMouseOver="SwapOutCody()" onMouseOut="SwapBackCody()">
+        <img name="imageflip3" src="img/nemmar.jpg" width=175 height=200 border=5px/></a>
+        <h5>Cody Nemmar</h5>
+        <p class="one">Austin semiotics butcher, authentic biodiesel scenester artisan mixtape roof party migas mustache fashion axe. Lomo actually pork belly mumblecore heirloom try-hard tilde, kale chips cornhole health goth. Hashtag lumbersexual umami, tilde High Life cronut skateboard Etsy Marfa American Apparel four dollar toast.<br />
+        <a href="https://github.com/cnemmar" class="gh">Check me out!</a>
+        </p>
+      </div>
 
-  <h3>Noah Gribbins</h3>
-  <a href="about.html" onMouseOver="SwapOutNoah()" onMouseOut="SwapBackNoah()">
-  <img name="imageflip2" src="img/gribbins.jpg" width=200 height=222 border=0/></a>
-  <p>Austin semiotics butcher, authentic biodiesel scenester artisan mixtape roof party migas mustache fashion axe. Lomo actually pork belly mumblecore heirloom try-hard tilde, kale chips cornhole health goth. Hashtag lumbersexual umami, tilde High Life cronut skateboard Etsy Marfa American Apparel four dollar toast.
-  </p>
-
-  <h3>Cody Nemmar</h3>
-  <a href="about.html" onMouseOver="SwapOutCody()" onMouseOut="SwapBackCody()">
-  <img name="imageflip3" src="img/nemmar.jpg" width=200 height=222 border=0/></a>
-  <p>Austin semiotics butcher, authentic biodiesel scenester artisan mixtape roof party migas mustache fashion axe. Lomo actually pork belly mumblecore heirloom try-hard tilde, kale chips cornhole health goth. Hashtag lumbersexual umami, tilde High Life cronut skateboard Etsy Marfa American Apparel four dollar toast.
-  </p>
-
-  <h3>Tiffine Koch</h3>
-  <a href="about.html" onMouseOver="SwapOutTiff()" onMouseOut="SwapBackTiff()">
-  <img name="imageflip4" src="img/koch.jpg" width=200 height=222 border=0/></a>
-  <p>Austin semiotics butcher, authentic biodiesel scenester artisan mixtape roof party migas mustache fashion axe. Lomo actually pork belly mumblecore heirloom try-hard tilde, kale chips cornhole health goth. Hashtag lumbersexual umami, tilde High Life cronut skateboard Etsy Marfa American Apparel four dollar toast.
-  </p>
-
-  <script src="add-content.js"></script>
+      <div class="one-half column">
+        <a href="about.html" onMouseOver="SwapOutTiff()" onMouseOut="SwapBackTiff()">
+        <img name="imageflip4" src="img/koch.jpg" width=175 height=200 border=5px/></a>
+        <h5>Tiffine Koch</h5>
+        <p class="one">Tiffine is an amateur coder and expert lunch breaker. She likes long walks to Top Pot and pair programming. In her spare time, she likes to read blogs about politics and current events.<br />
+        <a href="https://github.com/tiffine-koch" class="gh">Check me out!</a>
+        </p>
+      </div>
+    </div>
+    </section>
+  </div>
   <script src="about.js"></script>
-  <footer>
+  <!--footer>
   <a href="">About our Spirit Animal Generator</a> * <a href="">Play the Game Now!</a> * <a href="">About Team Expansive</a> 
-  </footer>
-
+  </footer -->
 </body>
-
 </html>

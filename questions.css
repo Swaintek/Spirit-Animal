@@ -1,0 +1,85 @@
+#form {
+	font-family: 'Merriweather Sans', sans-serif;
+	background-color:rgba(198,205,209,.9);
+/*    width: 700px;*/
+    padding: 25px;
+    border: 5px solid #3b5272;
+    border-radius: 10px;
+/*    margin: 25px auto;*/
+/*  background: linear-gradient(#c6cdd1, #4d6486);*/
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+	margin: 0 auto; 
+/*	margin-bottom: 50px;*/
+/*	text-align: center;*/
+/*	height: 350px;*/
+	width: 50%;
+	border-radius: 20px;
+	border: 5px solid #4d6486;
+/*  box-shadow: 0px 0px 30px rgba(49,7,7,1);*/
+}
+
+h1 {
+	text-align: center;
+}
+
+header {
+/*	   justify-content: center;	
+   height: 150px;
+   margin-top: 3%;
+   margin-left: 8%;
+   margin-bottom: 3%;
+   margin-right: 8%;
+   background-color:  #c1a8ad ;
+   box-shadow: 0px 0px 15px rgba(49,7,7,1);
+   border-radius: 5px;
+   text-overflow: ellipsis;
+	white-space: nowrap;
+ 	overflow: hidden;*/
+ 	font-family: 'Merriweather';
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+/*	height: 200px;*/
+	margin-top: 2%;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 2%;
+	background-color: rgba(193,168,173,.9);
+	box-shadow: 0px 0px 15px rgba(49,7,7,1);
+	border-radius: 5px;
+}
+
+button {
+	align-self: center;
+	text-align: center;
+	background-color: #c6cdd1;
+	font-size: 150%;
+	height: 130px;
+	width: 130px;
+	border-radius: 50%;
+	border: 5px solid #4d6486;
+	box-shadow: 0px 0px 20px rgba(49,7,7,1);
+}
+
+button:hover {
+	background-color: #4d6486;
+	border: 5px solid #c6cdd1;
+	color: #c6cdd1;
+}
+
+#questionImg {
+	background-size: 100%, 100%;
+	background-repeat: no-repeat;
+}
+
+#inputButton {
+	font-family: 'Merriweather';
+    position:relative;
+    left:40%;
+    right:40%;
+    margin-top: 40px;
+}
