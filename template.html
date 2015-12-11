@@ -6,20 +6,27 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="questions.css">
   <title>Spirit Animal!</title>
 </head>
 
 <body id="questionImg">
+  <script type="tex/x-handlebars-template" id="templateID">
 
     <header>
-    <h1 id="questionTitle"></h1>
+    <h1 id="questionTitle"><div>{{title}}</div></h1>
   </header>
   <main>
     <form id='form'>
+      <div>{{question}}</div>
+      <input class="radio">{{1}}</div>
+      <input class="radio">{{2}}</div>
+      <input class="radio">{{3}}</div>
+      <button></button>
     </form>
   </main>
-  <script src = "vender/questions.js"></script>
+  <script src = "questions.js"></script>
 
 </body>
 
