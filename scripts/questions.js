@@ -161,7 +161,7 @@ var questionBuilder = function () { //builds HTML framework for question block
 		a2Text: a2Text[questionNumber],
 		a3Text: a3Text[questionNumber],
 		button: inputButtons[questionNumber]
-		}
+	};
 
 		var compileTemplate = Handlebars.compile($('#templateID').html());
 		var html = compileTemplate(runForm);
@@ -185,7 +185,6 @@ var valueScore = function (event) {  //Scores answers and loads next question or
 			animalObjects[i].score += 1;   //Score for answer 3
 		}
 		}
-		console.log(questionNumber);
 
 	questionNumber += 1; //Moves to next question... Control variable for ENTIRE SCRIPT!!!!
 	if (questionNumber < questions.length) {

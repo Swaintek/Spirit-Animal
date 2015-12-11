@@ -1,45 +1,41 @@
-var winningAnimal;
+var site = {};
 
-var declareWinner = function () {
+site.winningAnimal = '';
+
+site.declareWinner = function () {
 	var animalObjects = JSON.parse(localStorage.getItem('animals'));
 	var highScore;
 	var scores = [];
 	for (var i = 0; i < animalObjects.length; i++) {
 		scores.push(animalObjects[i].score);
-	};
-	console.log(scores);
+	}
+
 	highScore = Math.max.apply(null,scores);
-	console.log(highScore);
+
 	var winningAnimals = [];
-	for (var i = 0; i < animalObjects.length; i++) {
+	for (i = 0; i < animalObjects.length; i++) {
 		if (animalObjects[i].score === highScore) {
 			winningAnimals.push(animalObjects[i]);
 		}
-	};
-	console.log(winningAnimals);
-	winningAnimal = winningAnimals[Math.floor(Math.random()*winningAnimals.length)];
+	}
+
+	site.winningAnimal = winningAnimals[Math.floor(Math.random()*winningAnimals.length)];
 }
 
-declareWinner();
-
-var song = winningAnimal.animalSong
-var output = function() {
-	var hOne = document.getElementById('textMsg');
-	var article = document.getElementById('animal-content');
+site.output = function() {
 	var msgOne = "Congratulations, " + localStorage.getItem('username') + '<br />' + "We've Found Your Spirit Animal "
-                        + " the " + winningAnimal.animalName + '<br />' + '<img id="animalpic"src= ' +
-                        winningAnimal.animalImage.toUpperCase() + ' />' + '<br />' ;
-	hOne.innerHTML = msgOne;
-	var msgTwo = winningAnimal.animalInfo;
-	article.innerHTML = msgTwo;
+                        + " the " + site.winningAnimal.animalName + '<br />' + '<img id="animalpic"src= ' +
+                        site.winningAnimal.animalImage.toUpperCase() + ' />' + '<br />' ;
+	$('#textMsg').append(msgOne);
+	$('#animal-content').append(site.winningAnimal.animalInfo);
 }
 
-output();
-
-var playAgain = function() {
-	 window.location.href = "index.html";
+site.playAgain = function() {
+	window.location.href = "index.html";
 }
 
-$('#play-again').on('click', playAgain;
-// var $again = document.getElementById('play-again');
-// again.addEventListener('click', playAgain);
+$(function() {
+	site.declareWinner();
+	site.output();
+	$('#play-again').on('click', site.playAgain);
+});
