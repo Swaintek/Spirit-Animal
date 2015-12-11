@@ -7,26 +7,27 @@
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" type="text/css" href="questions.css">
+  <link rel="stylesheet" type="text/css" href="style/questions.css">
   <title>Spirit Animal!</title>
 </head>
 
 <body id="questionImg">
-  <script type="tex/x-handlebars-template" id="templateID">
+  <script type="text/x-handlebars-template" id="templateID">
 
     <header>
     <h1 id="questionTitle"><div>{{title}}</div></h1>
   </header>
   <main>
     <form id='form'>
-      <div>{{question}}</div>
-      <input class="radio">{{1}}</div>
-      <input class="radio">{{2}}</div>
-      <input class="radio">{{3}}</div>
-      <button></button>
+      <div id="questions">{{questions}}</div>
+      <input type="radio">{{a1Text}}</div>
+      <input type="radio">{{a2Text}}</div>
+      <input type="radio">{{a3Text}}</div>
+      <button type="submit">{{button}}</button>
     </form>
   </main>
-  <script src = "questions.js"></script>
+  </script>
+  <script src = "scripts/questions.js"></script>
 
 </body>
 
