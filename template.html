@@ -6,6 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="style/questions.css">
   <title>Spirit Animal!</title>
@@ -20,10 +21,10 @@
   <main>
     <form id='form'>
       <div id="questions">{{questions}}</div>
-      <input type="radio">{{a1Text}}</div>
-      <input type="radio">{{a2Text}}</div>
-      <input type="radio">{{a3Text}}</div>
-      <button type="submit">{{button}}</button>
+      <input type="radio" id="A1">{{a1Text}}
+      <input type="radio" id="A2">{{a2Text}}
+      <input type="radio" id="A3">{{a3Text}}
+      <button type="submit" id="questionSubmitButton">{{button}}</button>
     </form>
   </main>
   </script>
