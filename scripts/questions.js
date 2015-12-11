@@ -165,69 +165,28 @@ var questionBuilder = function () { //builds HTML framework for question block
 
 		var compileTemplate = Handlebars.compile($('#templateID').html());
 		var html = compileTemplate(runForm);
+		$('#questionImg').empty();
 		$('#questionImg').append(html);
 
-	var backgroundImg = document.getElementById('questionImg');
-	setAttribute(backgroundImg, {'background':backgroundImgs[questionNumber]});
+		$('#questionImg').attr('background', backgroundImgs[questionNumber]);
+		$('#questionSubmitButton').on('click', valueScore);
 
-	// var questionTitle = document.getElementById('questionTitle');
-	// questionTitle.innerHTML = questionTitles[questionNumber];
-	//
-	// var form = document.getElementById('form');
-	// var question = document.createElement('div');
-	// setAttribute(question, {'id':'question', 'background-attachment':'fixed', 'background-position':'center', 'background-repeat':'no-repeat', 'background-size':'cover'});  //Question
-	// form.appendChild(question);
-	// qTextEl = document.createElement('p');
-	// qTextEl.innerHTML = questions[questionNumber];
-	// question.appendChild(qTextEl);
-	//
-	// var a1Input = document.createElement('input'); //Answer 1
-	// setAttribute(a1Input, a1Attr[questionNumber]);
-	// question.appendChild(a1Input)
-	// var a1 = document.createElement('label');
-	// a1.innerHTML = a1Text[questionNumber];
-	// question.appendChild(a1);
-	// question.appendChild(document.createElement('br'));
-	//
-	// var a2Input = document.createElement('input'); //Answer 2
-	// setAttribute(a2Input, a2Attr[questionNumber]);
-	// question.appendChild(a2Input)
-	// var a2 = document.createElement('label');
-	// a2.innerHTML = a2Text[questionNumber];
-	// question.appendChild(a2);
-	// question.appendChild(document.createElement('br'));
-	//
-	// var a3Input = document.createElement('input'); //Answer 3
-	// setAttribute(a3Input, a3Attr[questionNumber]);
-	// question.appendChild(a3Input)
-	// var a3 = document.createElement('label');
-	// a3.innerHTML = a3Text[questionNumber];
-	// question.appendChild(a3);
-	// question.appendChild(document.createElement('br'));
-	//
-	// var inputButton = document.createElement('button');  //Submit button
-	// setAttribute(inputButton, {'type':'click', 'value':'submit', 'id':'inputButton'});
-	// inputButton.textContent=inputButtons[questionNumber];
-	// question.appendChild(inputButton);
-	// inputButton.addEventListener('click', valueScore);
-
-	$('#questionSubmitButton').on('click', valueScore);
 };
 
 
 var valueScore = function (event) {  //Scores answers and loads next question or results page
 	event.preventDefault();
 	for (var i = 0; i < animalObjects.length; i++) {  //2D loop controlled by questionNumber and animalObjects.length
-		if ($('#A1').checked && animalObjects[i][a1Attr[questionNumber].attr] == true) {
+		if ($('#A1:checked') && animalObjects[i][a1Attr[questionNumber].attr] == true) {
 			animalObjects[i].score += 1;   //Score for answer 1
-		} else if (document.getElementById('A2').checked == true && animalObjects[i][a2Attr[questionNumber].attr] == true) {
+		} else if ($('#A2:checked') && animalObjects[i][a2Attr[questionNumber].attr] == true) {
 			animalObjects[i].score += 1;   //Score for answer 2
-		} else if (document.getElementById('A3').checked == true && animalObjects[i][a3Attr[questionNumber].attr] == true) {
+		} else if ($('#A4:checked') && animalObjects[i][a3Attr[questionNumber].attr] == true) {
 			animalObjects[i].score += 1;   //Score for answer 3
 		}
 		}
-	var element = document.getElementById('questions');
-	element.parentNode.removeChild(element); //Removes old question
+		console.log(questionNumber);
+
 	questionNumber += 1; //Moves to next question... Control variable for ENTIRE SCRIPT!!!!
 	if (questionNumber < questions.length) {
 		questionBuilder(); //Loads next question
