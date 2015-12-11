@@ -32,7 +32,7 @@ site.initialClick = function(e) {
 //Function to take our user to the next page/to the Spirit Animal Test
 site.startGame = function (e) {
 	if (e.which === 1) e.preventDefault();
-	window.location.href = "questions.html";
+	window.location.href = "template.html";
 }
 //Runs our event listener.
 $(function() {

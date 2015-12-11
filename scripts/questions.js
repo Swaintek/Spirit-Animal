@@ -42,9 +42,11 @@ var animalObjects = []; //Holds all animal information for scoring
 var backgroundImgs = ['img/restaurant.jpg','img/trash.jpg','img/gorge.jpg','img/wedding.jpg','img/ticket.jpg',
 						'img/clothing.png','img/sink.jpg','img/dinner.jpg','img/rex.jpg','img/honeymoon.jpg']
 
+//go in {{title}}
 var questionTitles = ['The restaurant...', 'Trash crash!', 'Do you believe in Rock and Roll?', 'Aloha!', 'Two tickets to paradise..',
 						'Make it work.', 'Drip drop drip', 'The dinner party', 'Drop and give me twenty', 'Honeymooners']
 
+//{{inputButtons}}
 var inputButtons = ['$$??', '@#$!!!', 'Rock out?', 'Aloha', 'Come fly with me', 'No shirt ?', 'Fix it!', 'Yum', 'Push it real good', 'To the moon Alice!']
 
 for(var i=0; i<animalData.length; i+=1){ //Pushes all animal data
@@ -57,6 +59,7 @@ for(var i=0; i<animalData.length; i+=1){ //Pushes all animal data
 
 var questionNumber = 0; //Control variable for ENTIRE SCRIPT!!!!
 
+//{{imput}}
 var questions = ["After dining at your favorite restaurant, you notice someone at the table next to you leaves their wallet behind. You...",
 				 "When parallel parking at your work parking garage, you accidentally knock the 200lb garbage receptacle over. You...",
 		 		 "Your favorite band is playing at the Gorge in George. You...",
@@ -68,36 +71,37 @@ var questions = ["After dining at your favorite restaurant, you notice someone a
 		 		 "Your colleague wants to schedule an office 'exercise outing'. You suggest...",
 		 		 "A good friend is planning his honeymoon and is asking for your advice. You suggest..."];
 //Questions are expandable -- Add questions/answers/attributes -- no additional changes are necessary
-var a1Text = ['<label for="A1">Run after them in hopes of returning their wallet.',
-				'<label for="A1">Spend the next ten minutes lifting the receptacle upright and cleaning up all of the garbage that has fallen out.',
-				'<label for="A1">Read more about the venue, but ultimately do not buy tickets. You will see them when they come next month to a smaller venue.',
-				'<label for="A1">Swimming, snorkeling and surfing. You love the ocean.',
-				'<label for="A1">A glacier tour of Iceland.',
-				'<label for="A1">Leave the exact payment amount, including sales tax, on the counter with a note.',
-				'<label for="A1">Call a plumber. With your level of expertise, this could go from bad to worse.',
-				'<label for="A1">Make an excuse why you cannot attend and stay home to watch Netflix alone. Being trapped in small talk is not your thing.',
-				'<label for="A1">A day hike along the Burke-Gilman Trail. The best part of the PNW.',
-				'<label for="A1">A sight-seeing river cruise in Brazil.'];
-var a2Text = ['<label for="A2">You look up their name and address in Google in hopes of contacting them directly.',
-				'<label for="A2">You immediately go find another parking spot on the other side of the garage. The security cameras in the garage are broken; no one will know it was you.',
-				'<label for="A2">Will not even consider buying tickets. You do not like live shows and will buy the concert dvd.',
-				'<label for="A2">Relaxing on the beach and sightseeing. Sun and sand is your vacation m.o.',
-				'<label for="A2">White river rafting in the Columbia River.',
-				'<label for="A2">Check the back area and out front to make sure the salesperson is not in any trouble. Then you alert the business next door that the clothing store has been left unattended.',
-				'<label for="A2">Google a quick solution while you call the landlord. This should be their problem to fix, but you do not want it to get worse +1 resourceful.',
-				'<label for="A2">Send a raincheck and head to the nearest sports bar; intimate dinners where you know everyone are boring to you.',
-				'<label for="A2">A school of acrobatics and trapeze arts. Teambuilding and hangtime',
-				'<label for="A2">Backpacking through indigenous ruins in Mexico.'];
-var a3Text = ['<label for="A3">Immediately give the wallet to the restaurant manager.',
-				'<label for="A3">Walk downstairs to alert maintenance of the accident. You will not risk injuring yourself picking this up alone.',
-				'<label for="A3">Buy tickets for you and all of your friends!',
-				'<label for="A3">Skydiving! You are an adrenaline junkie who loves to fly.',
-				'<label for="A3">A camping trip through Yellowstone.',
-				'<label for="A3">Tuck the shirt in your bag and ease out of the front door.',
-				'<label for="A3">Grab your tools from the basement and start to fix the leak. What is the worst that can happen?',
-				'<label for="A3">Confirm your RSVP and let them know what dish you are bringing.',
-				'<label for="A2">Kayaking in the Puget Sound. There is nothing better!',
-				'<label for="A3">A five-star resort trip to the Swiss Alps.'];
+var a1Text = ['Run after them in hopes of returning their wallet.',
+				'Spend the next ten minutes lifting the receptacle upright and cleaning up all of the garbage that has fallen out.',
+				'Read more about the venue, but ultimately do not buy tickets. You will see them when they come next month to a smaller venue.',
+				'Swimming, snorkeling and surfing. You love the ocean.',
+				'A glacier tour of Iceland.',
+				'Leave the exact payment amount, including sales tax, on the counter with a note.',
+				'Call a plumber. With your level of expertise, this could go from bad to worse.',
+				'Make an excuse why you cannot attend and stay home to watch Netflix alone. Being trapped in small talk is not your thing.',
+				'A day hike along the Burke-Gilman Trail. The best part of the PNW.',
+				'A sight-seeing river cruise in Brazil.'];
+var a2Text = ['You look up their name and address in Google in hopes of contacting them directly.',
+				'You immediately go find another parking spot on the other side of the garage. The security cameras in the garage are broken; no one will know it was you.',
+				'Will not even consider buying tickets. You do not like live shows and will buy the concert dvd.',
+				'Relaxing on the beach and sightseeing. Sun and sand is your vacation m.o.',
+				'White river rafting in the Columbia River.',
+				'Check the back area and out front to make sure the salesperson is not in any trouble. Then you alert the business next door that the clothing store has been left unattended.',
+				'Google a quick solution while you call the landlord. This should be their problem to fix, but you do not want it to get worse +1 resourceful.',
+				'Send a raincheck and head to the nearest sports bar; intimate dinners where you know everyone are boring to you.',
+				'A school of acrobatics and trapeze arts. Teambuilding and hangtime',
+				'Backpacking through indigenous ruins in Mexico.'];
+var a3Text = ['Immediately give the wallet to the restaurant manager.',
+				'Walk downstairs to alert maintenance of the accident. You will not risk injuring yourself picking this up alone.',
+				'Buy tickets for you and all of your friends!',
+				'Skydiving! You are an adrenaline junkie who loves to fly.',
+				'A camping trip through Yellowstone.',
+				'Tuck the shirt in your bag and ease out of the front door.',
+				'Grab your tools from the basement and start to fix the leak. What is the worst that can happen?',
+				'Confirm your RSVP and let them know what dish you are bringing.',
+				'Kayaking in the Puget Sound. There is nothing better!',
+				'A five-star resort trip to the Swiss Alps.'];
+
 var Answer = function (id, name, type, attr) { //Adds attributes to answer elements
 	this.id = id;
 	this.name = name;
@@ -150,65 +154,39 @@ function setAttribute(el, attrs) { //Function to push attributes into HTML eleme
 
 var questionBuilder = function () { //builds HTML framework for question block
 
-	var backgroundImg = document.getElementById('questionImg');
-	setAttribute(backgroundImg, {'background':backgroundImgs[questionNumber]});
+	var runForm = {
+		title: questionTitles[questionNumber],
+		questions: questions[questionNumber],
+		a1Text: a1Text[questionNumber],
+		a2Text: a2Text[questionNumber],
+		a3Text: a3Text[questionNumber],
+		button: inputButtons[questionNumber]
+		}
 
-	var questionTitle = document.getElementById('questionTitle');
-	questionTitle.innerHTML = questionTitles[questionNumber];
+		var compileTemplate = Handlebars.compile($('#templateID').html());
+		var html = compileTemplate(runForm);
+		$('#questionImg').empty();
+		$('#questionImg').append(html);
 
-	var form = document.getElementById('form');    
-	var question = document.createElement('div');
-	setAttribute(question, {'id':'question', 'background-attachment':'fixed', 'background-position':'center', 'background-repeat':'no-repeat', 'background-size':'cover'});  //Question
-	form.appendChild(question);
-	qTextEl = document.createElement('p');
-	qTextEl.innerHTML = questions[questionNumber];
-	question.appendChild(qTextEl);
+		$('#questionImg').attr('background', backgroundImgs[questionNumber]);
+		$('#questionSubmitButton').on('click', valueScore);
 
-	var a1Input = document.createElement('input'); //Answer 1
-	setAttribute(a1Input, a1Attr[questionNumber]);
-	question.appendChild(a1Input)
-	var a1 = document.createElement('label');
-	a1.innerHTML = a1Text[questionNumber];
-	question.appendChild(a1);
-	question.appendChild(document.createElement('br'));
-
-	var a2Input = document.createElement('input'); //Answer 2
-	setAttribute(a2Input, a2Attr[questionNumber]);
-	question.appendChild(a2Input)
-	var a2 = document.createElement('label');
-	a2.innerHTML = a2Text[questionNumber];
-	question.appendChild(a2);
-	question.appendChild(document.createElement('br'));
-
-	var a3Input = document.createElement('input'); //Answer 3
-	setAttribute(a3Input, a3Attr[questionNumber]);
-	question.appendChild(a3Input)
-	var a3 = document.createElement('label');
-	a3.innerHTML = a3Text[questionNumber];
-	question.appendChild(a3);
-	question.appendChild(document.createElement('br'));
-
-	var inputButton = document.createElement('button');  //Submit button
-	setAttribute(inputButton, {'type':'click', 'value':'submit', 'id':'inputButton'});
-	inputButton.textContent=inputButtons[questionNumber];
-	question.appendChild(inputButton);
-	inputButton.addEventListener('click', valueScore);
 };
 
 
 var valueScore = function (event) {  //Scores answers and loads next question or results page
 	event.preventDefault();
 	for (var i = 0; i < animalObjects.length; i++) {  //2D loop controlled by questionNumber and animalObjects.length
-		if (document.getElementById('A1').checked == true && animalObjects[i][a1Attr[questionNumber].attr] == true) {
+		if ($('#A1:checked') && animalObjects[i][a1Attr[questionNumber].attr] == true) {
 			animalObjects[i].score += 1;   //Score for answer 1
-		} else if (document.getElementById('A2').checked == true && animalObjects[i][a2Attr[questionNumber].attr] == true) {
+		} else if ($('#A2:checked') && animalObjects[i][a2Attr[questionNumber].attr] == true) {
 			animalObjects[i].score += 1;   //Score for answer 2
-		} else if (document.getElementById('A3').checked == true && animalObjects[i][a3Attr[questionNumber].attr] == true) {
+		} else if ($('#A4:checked') && animalObjects[i][a3Attr[questionNumber].attr] == true) {
 			animalObjects[i].score += 1;   //Score for answer 3
 		}
 		}
-	var element = document.getElementById('question');
-	element.parentNode.removeChild(element); //Removes old question
+		console.log(questionNumber);
+
 	questionNumber += 1; //Moves to next question... Control variable for ENTIRE SCRIPT!!!!
 	if (questionNumber < questions.length) {
 		questionBuilder(); //Loads next question
@@ -220,15 +198,3 @@ var valueScore = function (event) {  //Scores answers and loads next question or
 };
 
 questionBuilder(); //Initial build of question
-
-
-
-
-
-
-
-
-
-
-
-

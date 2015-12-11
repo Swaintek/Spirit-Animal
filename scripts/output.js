@@ -32,12 +32,6 @@ var output = function() {
 	hOne.innerHTML = msgOne;
 	var msgTwo = winningAnimal.animalInfo;
 	article.innerHTML = msgTwo;
-  var audio = document.getElementById('audio');
-  var source = document.getElementById('mp3Source');
-  source.src=song
-
-  audio.load();
-  audio.play();
 }
 
 output();
@@ -46,5 +40,6 @@ var playAgain = function() {
 	 window.location.href = "index.html";
 }
 
-var again = document.getElementById('play-again');
-again.addEventListener('click', playAgain);
+$('#play-again').on('click', playAgain;
+// var $again = document.getElementById('play-again');
+// again.addEventListener('click', playAgain);
