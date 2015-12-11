@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="style/questions.css">
+  <title>Spirit Animal!</title>
+
+
+<script type="text/x-handlebars-template" id="templateID">
+
+  <header>
+  <h1 id="questionTitle"><div>{{title}}</div></h1>
+</header>
+<main>
+  <form id='form'>
+    <div id="questions">{{questions}}</div>
+    <input type="radio" id="A1" value="1" name="rad">{{a1Text}}
+    <input type="radio" id="A2" value="2" name="rad">{{a2Text}}
+    <input type="radio" id="A3" value="3" name="rad">{{a3Text}}
+    <button type="submit" id="questionSubmitButton">{{button}}</button>
+  </form>
+</main>
+</script>
+
+</head>
+
+
+<body id="questionImg">
+
+
+</body>
+<script src = "scripts/questions.js"></script>
+
+</html>
