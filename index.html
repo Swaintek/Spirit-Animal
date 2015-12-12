@@ -4,8 +4,9 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="style/index.css">
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <title>Spirit Animal</title>
 </head>
 
@@ -14,7 +15,6 @@
 <header>
     <h1 id="index-h1">Spirit Animal Test</h1>
       <nav id="index-nav">
-        <a class="indexLinks" href="beats.html">Create Binaural Beats</a>
         <a class="indexLinks" href="about.html">About Team Expansive</a>
       </nav>
   </header>
@@ -22,7 +22,8 @@
  <main>
     <p id="index-p">Are you tired of being asked the same questions at an interview or doing a group icebreaker? One very popular question is "What is your Spirit Animal?" or "If you were an animal, what would you be and why?". Don't waste time trying to come up with a creative or witty answer. Let Team Expansive do the work for you. Simply, take our quiz and we will solve the Spirit Animal riddle for you by matching your personality traits to that of your animal twin. You will be armed with the perfect answer and ready to focus on the most important part of any discussion... yourself!</p>
     <form id="index-form">
-      <label id="labelTag">WHAT'S YOUR NAME?!</label><br>
+      <label id="labelTag">WHAT'S YOUR NAME?!</label>
+      <label id="errorTag" hidden>YOU MUST ENTER A NAME</label><br>
       <input type='text' name='username' id='username' autocomplete="off"><br>
       <button type='submit' name= 'submit' value='Submit' id='submitButton'>Submit</button>
     </form>
@@ -30,7 +31,7 @@
 
   <footer>
 	</footer>
-  <script src="index.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>
